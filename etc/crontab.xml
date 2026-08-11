@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © EleAPIs. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Cron/etc/crontab.xsd">
+    <group id="eleapis_connector">
+        <job name="eleapis_connector_abandoned_cart"
+             instance="EleAPIs\Connector\Cron\AbandonedCartScanner"
+             method="execute">
+            <schedule>*/15 * * * *</schedule>
+        </job>
+    </group>
+</config>

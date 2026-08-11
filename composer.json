@@ -1,0 +1,25 @@
+{
+    "name": "eleapis/module-connector",
+    "description": "Pushes signed Magento store events (orders, customers, abandoned carts) to the configured webhook for WhatsApp automation.",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": "^103.0",
+        "magento/module-config": "^101.2",
+        "magento/module-cron": "^100.4",
+        "magento/module-customer": "^103.0",
+        "magento/module-quote": "^101.2",
+        "magento/module-sales": "^103.0",
+        "magento/module-store": "^101.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "EleAPIs\\Connector\\": ""
+        }
+    }
+}
